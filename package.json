@@ -1,0 +1,7 @@
+{
+  "name": "wp-synesthesia2017",
+  "version": "0.0.1",
+  "devDependencies": {
+    "node-sass": "^3.10.1"
+  }
+}
