@@ -11,9 +11,8 @@
  *
  * @package Synesthesia_2017
  */
-
 get_header(); ?>
-
+	<!-- page.php -->
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
