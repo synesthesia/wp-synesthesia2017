@@ -10,7 +10,8 @@
 		slideMenu = $( '.slide-panel' ),
 		body = $( 'body' ),
 		actionText = $('.action-text'),
-		menuToggle = $( '.menu-toggle' );
+		menuToggle = $( '.menu-toggle' ),
+		sitecontent = $( '.site-content' );
 
 	/**
 	* Full width feature images
@@ -68,6 +69,7 @@
 
 			slideMenu.toggleClass( 'expanded' ).resize();
 			body.toggleClass( 'sidebar-open' );
+			sitecontent.toggleClass( 'sidebar-open' )
 
 			$this.toggleClass( 'toggle-on' );
 			$this.attr( 'aria-expanded', $( this ).attr( 'aria-expanded' ) == 'false' ? 'true' : 'false');
@@ -83,6 +85,7 @@
 				e.preventDefault();
 				slideMenu.removeClass( 'expanded' ).resize();
 				$( this ).removeClass( 'sidebar-open' );
+				sitecontent.removeClass( 'sidebar-open' );
 				menuToggle.removeClass( 'toggle-on' );
 				actionText.text( 'show' );
 			} );

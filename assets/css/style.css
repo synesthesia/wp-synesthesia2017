@@ -631,6 +631,9 @@ body {
   overflow: hidden;
   width: 25%; }
 
+.site-content .sidebar-open {
+  opacity: 0.4; }
+
 .site-footer {
   clear: both;
   width: 100%; }
