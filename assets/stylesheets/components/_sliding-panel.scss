@@ -46,3 +46,7 @@ body.admin-bar button.menu-toggle {
 .single .slide-panel.expanded {
 	display: block;
 }
+
+aside#secondary{
+	width: $size_site-sidebar;
+}

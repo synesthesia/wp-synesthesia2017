@@ -631,8 +631,11 @@ body {
   overflow: hidden;
   width: 25%; }
 
-.site-content .sidebar-open {
-  opacity: 0.4; }
+.site-content.sidebar-open {
+  margin-left: 25%; }
+  @media (max-width: 767px) {
+    .site-content.sidebar-open {
+      margin-left: 0; } }
 
 .site-footer {
   clear: both;
@@ -843,6 +846,9 @@ body.admin-bar button.menu-toggle {
 .slide-panel.expanded,
 .single .slide-panel.expanded {
   display: block; }
+
+aside#secondary {
+  width: 25%; }
 
 /*--------------------------------------------------------------
 # Header full screen image

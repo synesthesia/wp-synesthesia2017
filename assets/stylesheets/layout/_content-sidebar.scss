@@ -14,8 +14,12 @@
 	width: $size_site-sidebar;
 }
 
-.site-content .sidebar-open{
-	opacity: 0.4;
+.site-content.sidebar-open{
+	margin-left: $size_site-sidebar;
+
+	@include phone {
+		margin-left: 0;
+	}
 }
 
 .site-footer {
