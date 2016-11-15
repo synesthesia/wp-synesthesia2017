@@ -84,6 +84,7 @@
 				slideMenu.removeClass( 'expanded' ).resize();
 				$( this ).removeClass( 'sidebar-open' );
 				menuToggle.removeClass( 'toggle-on' );
+				actionText.text( 'show' );
 			} );
 		} );
 	}
