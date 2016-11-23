@@ -12,7 +12,7 @@
  *
  * @global array $themecolors
  */
-function syn2017b_wpcom_setup() {
+function synesthesia2017_wpcom_setup() {
 	global $themecolors;
 
 	// Set theme colors for third party services.
@@ -26,4 +26,4 @@ function syn2017b_wpcom_setup() {
 		);
 	}
 }
-add_action( 'after_setup_theme', 'syn2017b_wpcom_setup' );
+add_action( 'after_setup_theme', 'synesthesia2017_wpcom_setup' );

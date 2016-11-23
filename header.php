@@ -22,17 +22,17 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'syn2017b' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'synesthesia2017' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
 
 		<?php get_template_part( 'components/header/site', 'branding' ); ?>
 
-		<?php syn2017b_the_custom_logo(); ?>
+		<?php synesthesia2017_the_custom_logo(); ?>
 
 		<?php get_template_part( 'components/navigation/navigation', 'top' ); ?>
 
-		<?php syn2017b_social_menu(); ?>
+		<?php synesthesia2017_social_menu(); ?>
 
 	</header>
 	<div id="content" class="site-content">

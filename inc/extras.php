@@ -13,7 +13,7 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function syn2017b_body_classes( $classes ) {
+function synesthesia2017_body_classes( $classes ) {
 	// Adds a class of group-blog to blogs with more than 1 published author.
 	if ( is_multi_author() ) {
 		$classes[] = 'group-blog';
@@ -31,4 +31,4 @@ function syn2017b_body_classes( $classes ) {
 
 	return $classes;
 }
-add_filter( 'body_class', 'syn2017b_body_classes' );
+add_filter( 'body_class', 'synesthesia2017_body_classes' );

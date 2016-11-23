@@ -17,27 +17,27 @@
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses syn2017b_header_style()
+ * @uses synesthesia2017_header_style()
  */
-function syn2017b_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'syn2017b_custom_header_args', array(
+function synesthesia2017_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'synesthesia2017_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 2000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'syn2017b_header_style',
+		'wp-head-callback'       => 'synesthesia2017_header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'syn2017b_custom_header_setup' );
+add_action( 'after_setup_theme', 'synesthesia2017_custom_header_setup' );
 
-if ( ! function_exists( 'syn2017b_header_style' ) ) :
+if ( ! function_exists( 'synesthesia2017_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog
  *
- * @see syn2017b_custom_header_setup().
+ * @see synesthesia2017_custom_header_setup().
  */
-function syn2017b_header_style() {
+function synesthesia2017_header_style() {
 	$header_text_color = get_header_textcolor();
 
 	// If no custom options for text are set, let's bail
@@ -70,4 +70,4 @@ function syn2017b_header_style() {
 	</style>
 	<?php
 }
-endif; // syn2017b_header_style
+endif; // synesthesia2017_header_style

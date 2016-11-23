@@ -7,7 +7,7 @@
  * @package Synesthesia2017B
  */
 
-if ( ! function_exists( 'syn2017b_setup' ) ) :
+if ( ! function_exists( 'synesthesia2017_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -15,14 +15,14 @@ if ( ! function_exists( 'syn2017b_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function syn2017b_setup() {
+function synesthesia2017_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
 	 * If you're building a theme based on components, use a find and replace
-	 * to change 'syn2017b' to the name of your theme in all the template files.
+	 * to change 'synesthesia2017' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain( 'syn2017b', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'synesthesia2017', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -42,11 +42,11 @@ function syn2017b_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
-	add_image_size( 'syn2017b-featured-image', 640, 9999 );
+	add_image_size( 'synesthesia2017-featured-image', 640, 9999 );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'menu-1' => esc_html__( 'Top', 'syn2017b' ),
+		'menu-1' => esc_html__( 'Top', 'synesthesia2017' ),
 		) );
 
 	/**
@@ -72,13 +72,13 @@ function syn2017b_setup() {
 	) );
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'syn2017b_custom_background_args', array(
+	add_theme_support( 'custom-background', apply_filters( 'synesthesia2017_custom_background_args', array(
 		'default-color' => 'ffffff',
 		'default-image' => '',
 	) ) );
 }
 endif;
-add_action( 'after_setup_theme', 'syn2017b_setup' );
+add_action( 'after_setup_theme', 'synesthesia2017_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -87,17 +87,17 @@ add_action( 'after_setup_theme', 'syn2017b_setup' );
  *
  * @global int $content_width
  */
-function syn2017b_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'syn2017b_content_width', 640 );
+function synesthesia2017_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'synesthesia2017_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'syn2017b_content_width', 0 );
+add_action( 'after_setup_theme', 'synesthesia2017_content_width', 0 );
 
 /**
  * Return early if Custom Logos are not available.
  *
  * @todo Remove after WP 4.7
  */
-function syn2017b_the_custom_logo() {
+function synesthesia2017_the_custom_logo() {
 	if ( ! function_exists( 'the_custom_logo' ) ) {
 		return;
 	} else {
@@ -110,9 +110,9 @@ function syn2017b_the_custom_logo() {
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function syn2017b_widgets_init() {
+function synesthesia2017_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'syn2017b' ),
+		'name'          => esc_html__( 'Sidebar', 'synesthesia2017' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -121,23 +121,23 @@ function syn2017b_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', 'syn2017b_widgets_init' );
+add_action( 'widgets_init', 'synesthesia2017_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function syn2017b_scripts() {
-	wp_enqueue_style( 'syn2017b-style', get_stylesheet_uri() );
+function synesthesia2017_scripts() {
+	wp_enqueue_style( 'synesthesia2017-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'syn2017b-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'synesthesia2017-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), '20151215', true );
 
-	wp_enqueue_script( 'syn2017b-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
+	wp_enqueue_script( 'synesthesia2017-skip-link-focus-fix', get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js', array(), '20151215', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'syn2017b_scripts' );
+add_action( 'wp_enqueue_scripts', 'synesthesia2017_scripts' );
 
 /**
  * Custom template tags for this theme.

@@ -18,7 +18,7 @@
 			the_content();
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'syn2017b' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'synesthesia2017' ),
 				'after'  => '</div>',
 			) );
 		?>
@@ -28,7 +28,7 @@
 			edit_post_link(
 				sprintf(
 					/* translators: %s: Name of current post */
-					esc_html__( 'Edit %s', 'syn2017b' ),
+					esc_html__( 'Edit %s', 'synesthesia2017' ),
 					the_title( '<span class="screen-reader-text">"', '"</span>', false )
 				),
 				'<span class="edit-link">',
