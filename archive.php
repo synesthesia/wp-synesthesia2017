@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Synesthesia_2017
+ * @package Synesthesia2017B
  */
 
 get_header(); ?>
@@ -45,4 +45,5 @@ get_header(); ?>
 		</main>
 	</div>
 <?php
+get_sidebar();
 get_footer();

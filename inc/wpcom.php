@@ -4,7 +4,7 @@
  *
  * This file is centrally included from `wp-content/mu-plugins/wpcom-theme-compat.php`.
  *
- * @package Synesthesia_2017
+ * @package Synesthesia2017B
  */
 
 /**
@@ -12,7 +12,7 @@
  *
  * @global array $themecolors
  */
-function synesthesia2017_wpcom_setup() {
+function syn2017b_wpcom_setup() {
 	global $themecolors;
 
 	// Set theme colors for third party services.
@@ -26,4 +26,4 @@ function synesthesia2017_wpcom_setup() {
 		);
 	}
 }
-add_action( 'after_setup_theme', 'synesthesia2017_wpcom_setup' );
+add_action( 'after_setup_theme', 'syn2017b_wpcom_setup' );

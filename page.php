@@ -9,10 +9,11 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Synesthesia_2017
+ * @package Synesthesia2017B
  */
+
 get_header(); ?>
-	<!-- page.php -->
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -32,4 +33,5 @@ get_header(); ?>
 		</main>
 	</div>
 <?php
+get_sidebar();
 get_footer();

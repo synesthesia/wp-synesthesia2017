@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Synesthesia_2017
+ * @package Synesthesia2017B
  */
 
 ?>
@@ -18,7 +18,7 @@
 			the_content();
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'synesthesia2017' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'syn2017b' ),
 				'after'  => '</div>',
 			) );
 		?>
@@ -28,7 +28,7 @@
 			edit_post_link(
 				sprintf(
 					/* translators: %s: Name of current post */
-					esc_html__( 'Edit %s', 'synesthesia2017' ),
+					esc_html__( 'Edit %s', 'syn2017b' ),
 					the_title( '<span class="screen-reader-text">"', '"</span>', false )
 				),
 				'<span class="edit-link">',

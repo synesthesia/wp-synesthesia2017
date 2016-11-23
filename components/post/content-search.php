@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Synesthesia_2017
+ * @package Synesthesia2017B
  */
 
 ?>

@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Synesthesia_2017
+ * @package Synesthesia2017B
  */
 
 if ( ! is_active_sidebar( 'sidebar-1' ) ) {

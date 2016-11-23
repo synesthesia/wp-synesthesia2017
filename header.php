@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Synesthesia_2017
+ * @package Synesthesia2017B
  */
 
 ?><!DOCTYPE html>
@@ -15,23 +15,24 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>"
-<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 <div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'synesthesia2017' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'syn2017b' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
 
-		<?php get_template_part( 'components/header/sliding', 'panel' ); ?>
+		<?php get_template_part( 'components/header/site', 'branding' ); ?>
 
-		<?php get_template_part( 'components/header/header', 'fullscreen-image' ); ?>
+		<?php syn2017b_the_custom_logo(); ?>
 
-		<?php synesthesia2017_the_custom_logo(); ?>
+		<?php get_template_part( 'components/navigation/navigation', 'top' ); ?>
+
+		<?php syn2017b_social_menu(); ?>
 
 	</header>
 	<div id="content" class="site-content">

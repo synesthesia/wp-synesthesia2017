@@ -1,4 +1,4 @@
-=== Synesthesia 2017 ===
+=== Synesthesia2017B ===
 
 Contributors:
 Tags:
@@ -11,7 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Description
+Basic
 
 == Installation ==
 
@@ -23,7 +23,7 @@ Description
 
 = Does this theme support any plugins? =
 
-Synesthesia 2017 includes support for Jetpack's Infinite Scroll as well as other features.
+Synesthesia2017B includes support for Jetpack's Infinite Scroll as well as other features.
 
 == Changelog ==
 
