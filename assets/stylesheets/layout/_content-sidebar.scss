@@ -12,6 +12,12 @@
 	float: right;
 	overflow: hidden;
 	width: $size_site-sidebar;
+
+	@include phone {
+		display:none;
+	}
+
+
 }
 
 .site-content.sidebar-open{
