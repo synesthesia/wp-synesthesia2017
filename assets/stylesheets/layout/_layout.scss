@@ -10,6 +10,11 @@ html {
 
 body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+  margin-left: $margin_body_left;
+}
+
+.content-area {
+  padding-right: $content_area_padding_right;
 }
 
 
