@@ -16,8 +16,10 @@
 	@include phone {
 		display:none;
 	}
+}
 
-
+.single .widget-area{
+	display:none;
 }
 
 .site-content.sidebar-open{

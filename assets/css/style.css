@@ -639,6 +639,9 @@ body {
     .site-content .widget-area {
       display: none; } }
 
+.single .widget-area {
+  display: none; }
+
 .site-content.sidebar-open {
   margin-left: 25%; }
   @media (max-width: 767px) {
