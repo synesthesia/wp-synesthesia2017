@@ -1,0 +1,11 @@
+.site-branding{
+    display:none;
+    background: #ff0000;
+    //width: 100%;
+    margin-left: -$margin_body_left;
+    position: fixed;
+    top: 0px;
+    min-height: 30px;
+}
+
+body.admin-bar .site-branding{top: 28px;} 

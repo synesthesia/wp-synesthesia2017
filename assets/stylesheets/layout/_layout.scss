@@ -11,15 +11,22 @@ html {
 body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
   margin-left: $margin_body_left;
+  z-index: 5;
+}
+
+.site-content{
+  margin-top: $site_content_margin_top;
+}
+
+body.admin-bar  .site-content{
+  margin-top: $site_content_margin_top + 28px;
 }
 
 .content-area {
   padding-right: $content_area_padding_right;
 }
 
-
 @import "content-sidebar";
-// @import "sidebar-content";
 
 
 /*--------------------------------------------------------------
@@ -34,6 +41,10 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+@import "site-branding";
+
+
 
 /*--------------------------------------------------------------
 ## Posts

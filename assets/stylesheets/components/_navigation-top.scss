@@ -1,9 +1,42 @@
 .main-navigation {
 	clear: both;
 	display: block;
-	float: left;
 	width: 100%;
+	position: fixed;
+    top: 0px; 
+    z-index: 10;
+	background-color: $color__background-menu;
+	min-height: $menu-min-height;
+	margin-left: -$margin_body_left;
+	padding-left: $margin_body_left;
+	margin-bottom: 5px;
 
+	a {
+		color: $color__menu_link;
+		
+		
+		&:visited {
+			color: $color__menu_link-visited;
+		}
+		&:hover,
+		&:focus,
+		&:active {
+			color: $color__menu_link-hover;
+		}
+		&:focus {
+			outline: thin dotted;
+		}
+		&:hover,
+		&:active {
+			outline: 0;
+		}
+	}
+
+	h1{
+        clear: none;
+        display: inline;
+    }
+	
 	ul {
 		display: none;
 		list-style: none;
@@ -47,6 +80,15 @@
 		li.focus > ul {
 			left: auto;
 		}
+
+		li{
+			margin-right: 10px;
+
+			&:last-of-type{
+				margin-right: 0;
+			}
+		}
+
 	}
 	
 	li {
@@ -68,6 +110,25 @@
 	.current_page_ancestor > a,
 	.current-menu-ancestor > a {
 	}
+}
+
+.menuform{
+	margin: 0 10px;
+}
+
+.menuinput, .menubutton{
+	display: inline;
+}
+
+.menubutton {
+	margin: 0 10px;
+}
+
+
+body.admin-bar .main-navigation{top: 28px;} 
+
+.topbar-section {
+	margin-bottom: 5px;
 }
 
 /* Small menu. */
